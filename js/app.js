@@ -4,14 +4,12 @@ document.addEventListener("DOMContentLoaded", () => {
     const valorInput = document.getElementById("valor_venda");
 
     const valorMin = 389.99;
-
-    if(window.location.pathname.endsWith("https://lucasnogueiracorrea.github.io/calcularJuros/")){
         
         const showValorMin = document.getElementById("valor_minimo");
 
         showValorMin.textContent = `Valor mínimo: ${(valorMin).toLocaleString("pt-BR", { style: "currency", currency: "BRL" })}`;
         btnCalcular.addEventListener("click", () => {
-            const valorVendaInput = parseFloat(valorInput.value.replace(",", "."));
+            const valorVendaInput = valorInput.value;
             
             if(valorVendaInput < valorMin){
                 alert("ERRO! Valor menor que R$ 389,99");
@@ -23,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
 
-    } else if(window.location.pathname.endsWith("showCalculate.html")){
+    if(window.location.pathname.endsWith("showCalculate.html")){
 
         const valorVenda = parseFloat(localStorage.getItem("valorVenda"));
 

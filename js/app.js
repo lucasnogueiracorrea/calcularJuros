@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const valorMin = 389.99;
 
-    if(window.location.pathname.endsWith("index.html")){
+    if(window.location.pathname.endsWith("https://lucasnogueiracorrea.github.io/calcularJuros/")){
         
         const showValorMin = document.getElementById("valor_minimo");
 

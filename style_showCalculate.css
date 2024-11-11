@@ -94,24 +94,3 @@
 .lista_parcelas{
     list-style: none;
 }
-
-footer{
-    background: linear-gradient(to right, #31a252, #6ecf42);
-
-    width: 100vw;
-
-    padding: 5px;
-
-    text-align: center;
-    font-family: "Open Sans", serif;
-    font-size: 1rem;
-    color: #ffffe5;
-
-}
-
-
-footer > p > a{
-    text-decoration: none;
-    color: #ffffe5;
-    cursor: pointer;
-}

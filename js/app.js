@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
             window.location.href = "showCalculate.html"; 
             }
         });
-  
+
     } else if(window.location.pathname.endsWith("showCalculate.html")){
 
         const valorVenda = parseFloat(localStorage.getItem("valorVenda"));
